@@ -17,7 +17,7 @@ const authHeaders = auth.getAuthHeaders(API_KEY, SECRET, '/v1/trading/wallet/bal
 console.info(authHeaders);
 ```
 
-`apiKey` is the raw value generated from yout (Bit2Me account)[https://account.qa.bit2me.com/api-keys]. `nonce` value corresponds to the current value of the Unix timestamp in UTC and has a valid time window of 5 seconds. Finally, `signature` is a `base64` endoded hash from sha signature of `nonce`, `url` and `body`.
+`apiKey` is the raw value generated from yout (Bit2Me account)[https://account.bit2me.com/api-keys]. `nonce` value corresponds to the current value of the Unix timestamp in UTC and has a valid time window of 5 seconds. Finally, `signature` is a `base64` endoded hash from sha signature of `nonce`, `url` and `body`.
 
 It's necessary to take into account that the body included in the message to sign, must not include empty spaces in key pair values. Following sample shows how this message to sign is generated from `nonce`, `url` and `body` when we have to add order with REST API `POST /v1/trading/order`:
 ```
