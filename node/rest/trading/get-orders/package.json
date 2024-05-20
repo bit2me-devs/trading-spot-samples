@@ -1,0 +1,13 @@
+{
+  "name": "get-orders",
+  "description": "Get all user orders paged with a maximum page size of 100",
+  "scripts": {
+    "lint": "eslint .",
+    "start": "node --env-file=../../../../.env index.js"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "auth": "file:../../auth"
+  },
+  "private": true
+}

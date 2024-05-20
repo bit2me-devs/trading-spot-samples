@@ -1,0 +1,10 @@
+{
+  "name": "get-market-data",
+  "description": "Get a list of markets (quantity and price precisions, order minimums and maximums, status)",
+  "scripts": {
+    "lint": "eslint .",
+    "start": "node --env-file=../../../../.env index.js"
+  },
+  "main": "index.js",
+  "private": true
+}

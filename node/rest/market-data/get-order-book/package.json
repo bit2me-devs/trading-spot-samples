@@ -1,0 +1,10 @@
+{
+  "name": "get-order-book",
+  "description": "Get the order book associated to the market symbol",
+  "scripts": {
+    "lint": "eslint .",
+    "start": "node --env-file=../../../../.env index.js"
+  },
+  "main": "index.js",
+  "private": true
+}

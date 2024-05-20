@@ -1,0 +1,13 @@
+{
+  "name": "get-trades",
+  "description": "Get all user trades paged with a maximum page size of 50",
+  "scripts": {
+    "lint": "eslint .",
+    "start": "node --env-file=../../../../.env index.js"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "auth": "file:../../auth"
+  },
+  "private": true
+}
