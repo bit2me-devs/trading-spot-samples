@@ -15,8 +15,8 @@ const main = async () => {
         ...authHeaders
       }
     });
-    const order = await response.json();
-    console.info(order);
+    const orders = await response.json();
+    console.info(orders);
   }
   catch (error) {
     console.error(error);
