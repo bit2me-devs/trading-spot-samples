@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-Generate a new API Key from yout (Bit2Me account)[https://account.bit2me.com/api-keys]. Once the new key is generated, you must copy the value of the key and the secret to the local environment file `.env`:
+Generate a new API Key from yout [Bit2Me account](https://account.bit2me.com/api-keys). Once the new key is generated, you must copy the value of the key and the secret to the local environment file `.env`:
 
 ```
 BIT2ME_SERVER=https://gateway.bit2me.com
