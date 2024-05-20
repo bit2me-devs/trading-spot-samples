@@ -16,7 +16,7 @@ const main = async () => {
       }
     });
     const trades = await response.json();
-    console.info(trades.data.length);
+    console.info(trades);
   }
   catch (error) {
     console.error(error);
