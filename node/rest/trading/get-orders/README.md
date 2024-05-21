@@ -1,6 +1,6 @@
 # Get orders
 
-Get all user orders paged with a maximum page size of 100. The result can be filtered by dates, list of statuses, side and market symbol optionally.
+Get all user orders. The result can be filtered by dates, list of statuses, side and market symbol optionally.
 
 ## Run
 

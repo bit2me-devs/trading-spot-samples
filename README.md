@@ -24,6 +24,7 @@ BIT2ME_API_SECRET="HERE_YOUR_SECRET"
 ### Trading
 * [ADD order](/node/rest/trading/add-order/)
 * [GET orders](/node/rest/trading/get-orders/)
+  * [GET paginated and sorted orders by symbol](/node/rest/trading/get-paginated-orders/)
 * [GET trades](/node/rest/trading/get-trades/)
 
 ### Funding
