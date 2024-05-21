@@ -2,7 +2,6 @@
   "name": "get-ohlcv",
   "description": "Get OHLCV (open, highest, lowest, close, volume) information. The last entry in the OHLCV array is for the current",
   "scripts": {
-    "lint": "eslint .",
     "start": "node --env-file=../../../../.env index.js"
   },
   "main": "index.js",

@@ -2,12 +2,11 @@
   "name": "get-balance",
   "description": "Retrieve balances of all wallets and blocked balances in active orders",
   "scripts": {
-    "lint": "eslint .",
     "start": "node --env-file=../../../../.env index.js"
   },
   "main": "index.js",
   "dependencies": {
-    "auth": "file:../../auth"
+    "auth": "file:../../../auth"
   },
   "private": true
 }

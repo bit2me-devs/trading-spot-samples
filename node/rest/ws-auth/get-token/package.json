@@ -2,12 +2,11 @@
   "name": "get-token",
   "description": "An authentication token must be requested via this REST API endpoint in order to connect to and authenticate with our WebSockets API",
   "scripts": {
-    "lint": "eslint .",
     "start": "node --env-file=../../../../.env index.js"
   },
   "main": "index.js",
   "dependencies": {
-    "auth": "file:../../auth"
+    "auth": "file:../../../auth"
   },
   "private": true
 }

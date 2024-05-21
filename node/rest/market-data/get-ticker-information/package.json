@@ -2,7 +2,6 @@
   "name": "get-ticker-information",
   "description": "Get ticker information (OHLCV, current best bid and ask, percentage versus price 24 hours ago) for all markets or by requested market symbol. The data refers to the last 24 hours from the date indicated by the timestamp",
   "scripts": {
-    "lint": "eslint .",
     "start": "node --env-file=../../../../.env index.js"
   },
   "main": "index.js",

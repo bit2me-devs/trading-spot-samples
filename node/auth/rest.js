@@ -1,6 +1,6 @@
 const crypto = require('crypto');
 
-const getAuthHeaders = (apiKey, secret, path, body) => {
+const getRestAuthHeaders = (apiKey, secret, path, body) => {
   const nonce = new Date().getTime();
   const messageToSign = getMessageToSign(nonce, path, body);
   const signature = getMessageSignature(messageToSign, secret);
@@ -27,5 +27,5 @@ const getMessageSignature = (message, secret) => {
 };
 
 module.exports = {
-  getAuthHeaders
+  getRestAuthHeaders
 };

@@ -1,12 +1,12 @@
 {
-  "name": "get-trades",
-  "description": "Get all user trades paged with a maximum page size of 50",
+  "name": "get-order-book",
+  "description": "Subscribe to order book associated to the market symbol",
   "scripts": {
     "start": "node --env-file=../../../../.env index.js"
   },
   "main": "index.js",
   "dependencies": {
-    "auth": "file:../../../auth"
+    "ws": "^8.17.0"
   },
   "private": true
 }

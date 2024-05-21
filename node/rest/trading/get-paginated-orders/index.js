@@ -20,7 +20,7 @@ const main = async () => {
 
     while (hasToLoadMoreOrders) {
       const url = `${PATH}?symbol=${symbol}&offset=${offset}&limit=${limit}&sort=${sort}&direction=${direction}&status=${status}&startTime=${startTime}&endTime=${endTime}`;
-      const authHeaders = auth.getAuthHeaders(API_KEY, SECRET, url);
+      const authHeaders = auth.getRestAuthHeaders(API_KEY, SECRET, url);
       const response = await fetch(`${SERVER}${url}`, {
         method: 'GET',
         headers: {

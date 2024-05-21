@@ -1,0 +1,9 @@
+{
+  "name": "auth",
+  "description": "Auth library",
+  "main": "index.js",
+  "dependencies": {
+    "crypto": "^1.0.1"
+  },
+  "private": true
+}

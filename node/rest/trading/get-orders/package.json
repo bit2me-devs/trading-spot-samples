@@ -2,12 +2,11 @@
   "name": "get-orders",
   "description": "Get all user orders",
   "scripts": {
-    "lint": "eslint .",
     "start": "node --env-file=../../../../.env index.js"
   },
   "main": "index.js",
   "dependencies": {
-    "auth": "file:../../auth"
+    "auth": "file:../../../auth"
   },
   "private": true
 }

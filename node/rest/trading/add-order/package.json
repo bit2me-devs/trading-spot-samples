@@ -2,12 +2,11 @@
   "name": "add-order",
   "description": "Place a new order",
   "scripts": {
-    "lint": "eslint .",
     "start": "node --env-file=../../../../.env index.js"
   },
   "main": "index.js",
   "dependencies": {
-    "auth": "file:../../auth"
+    "auth": "file:../../../auth"
   },
   "private": true
 }

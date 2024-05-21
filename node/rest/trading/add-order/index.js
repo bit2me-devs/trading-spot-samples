@@ -15,7 +15,7 @@ const main = async () => {
       orderType: 'limit'
     };
     
-    const authHeaders = auth.getAuthHeaders(API_KEY, SECRET, PATH, body);
+    const authHeaders = auth.getRestAuthHeaders(API_KEY, SECRET, PATH, body);
     const response = await fetch(`${SERVER}${PATH}`, {
       method: 'POST',
       headers: {

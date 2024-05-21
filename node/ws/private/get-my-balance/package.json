@@ -1,11 +1,12 @@
 {
-  "name": "get-paginated-orders",
-  "description": "Get paginated and sorted user open orders filtered by symbol between dates",
+  "name": "get-my-balance",
+  "description": "Subscribe to my balance",
   "scripts": {
     "start": "node --env-file=../../../../.env index.js"
   },
   "main": "index.js",
   "dependencies": {
+    "ws": "^8.17.0",
     "auth": "file:../../../auth"
   },
   "private": true

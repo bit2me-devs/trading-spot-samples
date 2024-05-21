@@ -10,7 +10,7 @@ const main = async () => {
     const assetSymbol = 'BTC,B2M,EUR'; // Optional, all asset symbols by default
     const filteredPath = `${PATH}?symbols=${assetSymbol}`;
 
-    const authHeaders = auth.getAuthHeaders(API_KEY, SECRET, filteredPath);
+    const authHeaders = auth.getRestAuthHeaders(API_KEY, SECRET, filteredPath);
     const response = await fetch(`${SERVER}${filteredPath}`, {
       method: 'GET',
       headers: {
