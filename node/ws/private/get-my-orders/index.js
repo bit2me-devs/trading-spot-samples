@@ -8,7 +8,7 @@ const main = async () => {
     const wsClient = new WebSocket(SERVER);
 
     wsClient.on('open', async () => {
-      await auth.authenticate(wsClient);
+      await auth.wsAuthenticate(wsClient);
 
       const message = {
         "event":"subscribe",
