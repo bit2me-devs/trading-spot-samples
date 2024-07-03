@@ -10,4 +10,5 @@
 * [ADD order](/node/ws/private/add-order/)
 * [GET my trades](/node/ws/private/get-my-trades/)
 * [GET my orders](/node/ws/private/get-my-orders/)
+* [GET executions](/node/ws/private/get-executions/)
 * [GET my balance](/node/ws/private/get-my-balance/)

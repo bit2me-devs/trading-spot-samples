@@ -12,7 +12,7 @@ const main = async () => {
 
       const message = {
         "event":"subscribe",
-        "symbol":"B2M/USDT",
+        "symbol":"B2M/USDT", // Optional
         "subscription":{"name":"my-orders"}
     };
       wsClient.send(JSON.stringify(message));
