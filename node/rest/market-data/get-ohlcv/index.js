@@ -1,3 +1,4 @@
+const headers = require('../headers');
 const PATH = '/v1/trading/candle';
 const SERVER = process.env.BIT2ME_SERVER;
 
@@ -10,7 +11,7 @@ const main = async () => {
     const limit = 10; // 10 intervals
 
     const url = `${SERVER}${PATH}?symbol=${symbol}&interval=${interval}&startTime=${startTime}&endTime=${endTime}&limit=${limit}`;
-    const response = await fetch(url);
+    const response = await fetch(url, { headers: headers });
     const ohlcv = await response.json();
     console.info(ohlcv);
   }

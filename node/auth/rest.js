@@ -6,6 +6,7 @@ const getRestAuthHeaders = (apiKey, secret, path, body) => {
   const signature = getMessageSignature(messageToSign, secret);
 
   return {
+    'Accept-Encoding': 'gzip, deflate, br, zstd',
     'x-api-key': apiKey,
     'api-signature': signature,
     'x-nonce': nonce
