@@ -1,0 +1,29 @@
+const auth = require('auth');
+
+const PATH = '/v1/trading/working-capital';
+const SERVER = process.env.BIT2ME_SERVER;
+const API_KEY = process.env.BIT2ME_API_KEY;
+const SECRET = process.env.BIT2ME_API_SECRET;
+
+const main = async () => {
+  try {
+    const assetSymbol = 'BTC,B2M,EUR'; // Optional, all configured limits by default
+    const filteredPath = `${PATH}?symbols=${assetSymbol}`;
+
+    const authHeaders = auth.getRestAuthHeaders(API_KEY, SECRET, filteredPath);
+    const response = await fetch(`${SERVER}${filteredPath}`, {
+      method: 'GET',
+      headers: {
+        'Content-type': 'application/json',
+        ...authHeaders
+      }
+    });
+    const workingCapital = await response.json();
+    console.info(workingCapital);
+  }
+  catch (error) {
+    console.error(error);
+  }
+};
+
+main();

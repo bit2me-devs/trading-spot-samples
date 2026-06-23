@@ -12,3 +12,4 @@
 * [GET my orders](/node/ws/private/get-my-orders/)
 * [GET executions](/node/ws/private/get-executions/)
 * [GET my balance](/node/ws/private/get-my-balance/)
+* [GET my working capital](/node/ws/private/get-my-working-capital/)

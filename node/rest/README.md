@@ -15,6 +15,7 @@
 
 ### Funding
 * [GET balance](/node/rest/funding/get-balance/)
+* [GET working capital limits](/node/rest/funding/get-working-capital/)
 
 ### WebSocket Authentication
 * [GET token](/node/rest/ws-auth/get-token/)

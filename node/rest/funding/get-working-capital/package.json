@@ -1,0 +1,12 @@
+{
+  "name": "get-working-capital",
+  "description": "Retrieve configured working capital limits and daily usage",
+  "scripts": {
+    "start": "node --env-file=../../../../.env index.js"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "auth": "file:../../../auth"
+  },
+  "private": true
+}

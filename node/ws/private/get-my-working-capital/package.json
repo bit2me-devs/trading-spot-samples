@@ -1,0 +1,13 @@
+{
+  "name": "get-my-working-capital",
+  "description": "Subscribe to my working capital",
+  "scripts": {
+    "start": "node --env-file=../../../../.env index.js"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "ws": "^8.17.0",
+    "auth": "file:../../../auth"
+  },
+  "private": true
+}
