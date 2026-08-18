@@ -14,7 +14,7 @@ const wsAuthenticate = async (wsClient) => {
 };
 
 const getAuthToken = async () => {
-  const authHeaders = restAuth.getRestAuthHeaders(API_KEY, SECRET, PATH);
+  const authHeaders = restAuth.getRestAuthHeaders(API_KEY, SECRET, PATH, {});
 
   const response = await fetch(`${SERVER}${PATH}`, {
     method: 'POST',

@@ -14,7 +14,7 @@ const getRestAuthHeaders = (apiKey, secret, path, body) => {
 };
 
 const getMessageToSign = (nonce, url, body) => {
-  const hasBody = !!body && Object.keys(body).length > 0;
+  const hasBody = !!body;
   return hasBody ? `${nonce}:${url}:${JSON.stringify(body)}` : `${nonce}:${url}`;
 };
 
